@@ -42,6 +42,12 @@ Use Azure Blob Storage as a filestore for resources.
    :width: 700
    :alt: Object in Azure
 
+**View Resource in Azure**
+
+.. image:: docs/images/view_resource_in_azure.png
+   :width: 700
+   :alt: View Resource in Azure
+
 
 ------------
 Requirements
