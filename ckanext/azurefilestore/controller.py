@@ -164,7 +164,7 @@ class AzureController(base.BaseController):
 
         storage_path = AzureUploader.get_storage_path(upload_to)
         filepath = os.path.join(storage_path, filename)
-        redirect_url = '{storage_account}.blob.core.windows.net/{container_name}/{filepath}'\
+        redirect_url = 'https://{storage_account}.blob.core.windows.net/{container_name}/{filepath}'\
                         .format(
                             container_name=config.get('ckanext.azurefilestore.container_name'),
                             filepath=filepath,
