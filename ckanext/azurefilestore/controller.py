@@ -159,8 +159,8 @@ class AzureController(base.BaseController):
         '''Redirect static file requests to their location on azure.'''
         storage_account = config.get('ckanext.azurefilestore.storage_account')
         # Remove last characted if it's a slash
-        if host_name[-1] == '/':
-            host_name = host_name[:-1]
+        # if host_name[-1] == '/':
+        #     host_name = host_name[:-1]
 
         storage_path = AzureUploader.get_storage_path(upload_to)
         filepath = os.path.join(storage_path, filename)
